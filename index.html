@@ -1,38 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>Bootstrap npm starter</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>You've successfully loaded up the Bootstrap npm starter project!</p>
-    <p>If this button looks blue, you've done it.</p>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click me!</button>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/starter.css">
+  <title>Bootstrap npm starter</title>
+</head>
+<body>
+<section class="container">
+  <div class="jumbotron">
+  <div class="row">
+    <div class="col-12">
+      <h1>lit.pl znajdzie rozwiązanie za Ciebie</h1>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control form-control-lg" id="exampleFormControlTextarea1" rows="8" placeholder="opisz dokładnie, czego potrzebujesz"></textarea>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div id="phoneCityHelpBlock" class="h5 mt-4 mb-3 form-text text-muted">
+              podaj swój numer telefonu, żebyśmy mogli do ciebie oddzwonić z gotowym rozwiązaniem w 30 minut
+            </div>
           </div>
-          <div class="modal-body">
-            If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Numer telefonu"
+                     aria-describedby="phoneCityHelpBlock">
+            </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="Miasto" aria-describedby="phoneCityHelpBlock">
+            </div>
           </div>
+          <div class="col col-sm-6 offset-sm-3 col-md-4 offset-md-4 mb-5">
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-block btn-dark btn-lg">szukaj</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+</section>
+<header class="header position-sticky">
+  <nav class="navbar navbar-dark bg-dark justify-content-between navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo-lit-slogan.png" width="116" height="51" alt="lit">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#">dołącz do lit.pl</a>
+          <a class="nav-item nav-link" href="#">menu-item 1</a>
+          <a class="nav-item nav-link" href="#">menu-item 2</a>
         </div>
       </div>
     </div>
+  </nav>
+</header>
+<main class="main py-5">
+  <div class="container">
+    <h2 class="my-3">Możesz też wyszukać rozwiązanie samodzielnie</h2>
+    <form>
+      <div class="row">
+        <div class="col-md-4 col-lg-5">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="wpisz, czego szukasz"
+                   aria-describedby="phoneCityHelpBlock">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-5">
+          <div class="form-group">
+            <input type="text" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="miasto" aria-describedby="phoneCityHelpBlock">
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-2">
+          <button type="submit" class="btn d-block w-100 text-center btn-dark btn-lg">szukaj</button>
+        </div>
+      </div>
+    </form>
+    <div>Mamy {ilość firm w bazie} zweryfikowancyh wykonawców/firm/ przeglądaj
+      rozwiązania po branży</div>
+  </div>
+</main>
+<footer>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
-  </body>
+</footer>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<script type="module" src="assets/js/starter.js"></script>
+</body>
 </html>
