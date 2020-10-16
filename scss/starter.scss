@@ -15,8 +15,9 @@
 //
 
 // Toggle global options
-$enable-gradients: true;
+$enable-gradients: false;
 $enable-shadows: true;
+$enable-responsive-font-sizes : true;
 
 // Customize some defaults
 
@@ -55,15 +56,15 @@ $enable-shadows: true;
  @import "bootstrap/scss/custom-forms";
  @import "bootstrap/scss/nav";
  @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
+ @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
+ @import "bootstrap/scss/badge";
  @import "bootstrap/scss/jumbotron";
 // @import "bootstrap/scss/alert";
 // @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/media";
-// @import "bootstrap/scss/list-group";
+ @import "bootstrap/scss/media";
+ @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
